@@ -1,0 +1,14 @@
+package kodlamaio.devs.demo.business.abstracts;
+
+import java.util.List;
+
+import kodlamaio.devs.demo.business.requests.programmingLanguageRequests.AddLanguageRequest;
+import kodlamaio.devs.demo.business.requests.programmingLanguageRequests.DeleteLanguageRequest;
+import kodlamaio.devs.demo.entities.ProgrammingLanguage;
+
+public interface ProgrammingLanguageService {
+	public void addLanguage(AddLanguageRequest addLanguageRequest);
+	public void deleteLanguage(DeleteLanguageRequest deleteLanguageRequest);
+	public void updateLanguage(UpdateLanguageRequest updateLanguageRequest,int id);
+	public List<ProgrammingLanguage> listLanguage();
+}

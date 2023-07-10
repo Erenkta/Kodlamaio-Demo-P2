@@ -1,0 +1,40 @@
+package kodlamaio.devs.demo.webApi;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import kodlamaio.devs.demo.business.abstracts.LanguageTechnologyService;
+import kodlamaio.devs.demo.business.requests.languageTechnologyRequests.AddTechnologyRequest;
+import kodlamaio.devs.demo.business.requests.languageTechnologyRequests.DeleteTechnologyRequest;
+import kodlamaio.devs.demo.business.requests.programmingLanguageRequests.AddLanguageRequest;
+import kodlamaio.devs.demo.business.responses.languageTechnologyResponses.GetAllTechnology;
+
+@RestController
+@RequestMapping("/api/technology")
+public class LanguageTechnologyController {
+	private LanguageTechnologyService techService;
+	
+	public LanguageTechnologyController(LanguageTechnologyService techService) {
+		this.techService = techService;
+	}
+	
+	@GetMapping("/gettech")
+	public List<GetAllTechnology> getAll(){
+		return techService.listTechnology();
+	}
+	@PostMapping("/addtech")
+	public void add(AddTechnologyRequest addTechnologyRequest) {
+		techService.addTechnology(addTechnologyRequest);
+	}
+	@DeleteMapping("/deletetech")
+	public void delete(DeleteTechnologyRequest deleteTechnologyRequest) {
+		techService.deleteTechnology(deleteTechnologyRequest);
+	}
+	@PutMapping("/updatetech")
+	
+}

@@ -1,0 +1,15 @@
+package kodlamaio.devs.demo.business.requests.programmingLanguageRequests;
+
+import java.util.List;
+
+import kodlamaio.devs.demo.entities.LanguageTechnology;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class UpdateLanguageRequest {
+	private String name;
+}

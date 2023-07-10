@@ -1,0 +1,5 @@
+package kodlamaio.devs.demo.business.responses.programmingLanguageResponses;
+
+public class GetAllLanguage {
+	private int id;
+}

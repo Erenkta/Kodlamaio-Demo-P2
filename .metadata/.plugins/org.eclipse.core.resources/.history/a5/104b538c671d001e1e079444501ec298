@@ -1,0 +1,6 @@
+package kodlamaio.devs.demo.business.requests.programmingLanguageRequests;
+
+
+public class DeleteLanguageRequest {
+	private String name;
+}

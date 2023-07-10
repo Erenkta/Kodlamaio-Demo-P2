@@ -1,0 +1,6 @@
+package kodlamaio.devs.demo.entities;
+
+public class LanguageTechnology { //one to many
+	private int id;
+
+}

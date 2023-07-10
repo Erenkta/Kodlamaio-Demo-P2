@@ -1,0 +1,8 @@
+package kodlamaio.devs.demo.business.abstracts;
+
+public interface ProgrammingLanguageService {
+	public void addLanguage(ProgrammingLanguage programmingLanguage);
+	public void deleteLanguage(ProgrammingLanguage programmingLanguage);
+	public void addLanguage(ProgrammingLanguage programmingLanguage);
+	public void addLanguage(ProgrammingLanguage programmingLanguage);
+}

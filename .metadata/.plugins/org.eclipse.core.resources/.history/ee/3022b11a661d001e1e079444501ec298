@@ -1,0 +1,6 @@
+package kodlamaio.devs.demo.business.responses.programmingLanguageResponses;
+
+public class getAllTechnologyResponse {
+	private int id;
+	private String name;
+}

@@ -1,0 +1,12 @@
+package kodlamaio.devs.demo.business.abstracts;
+
+import java.util.List;
+
+import kodlamaio.devs.demo.entities.LanguageTechnology;
+
+public interface LanguageTechnologyService {
+	public void addTechnology(LanguageTechnology languageTechnology);
+	public void deleteTechnology(LanguageTechnology languageTechnology);
+	public void updateTechnology(LanguageTechnology languageTechnology,int id);
+	public List<LanguageTechnology> listTechnology();
+}

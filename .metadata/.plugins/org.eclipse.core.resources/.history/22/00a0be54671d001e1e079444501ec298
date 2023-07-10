@@ -1,0 +1,5 @@
+package kodlamaio.devs.demo.business.requests.languageTechnologyRequests;
+
+public class AddLanguageRequest {
+
+}

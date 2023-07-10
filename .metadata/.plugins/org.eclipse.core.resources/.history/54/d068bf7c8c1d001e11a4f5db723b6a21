@@ -1,0 +1,38 @@
+package kodlamaio.devs.demo.business.concretes;
+
+import java.util.List;
+
+import kodlamaio.devs.demo.business.abstracts.LanguageTechnologyService;
+import kodlamaio.devs.demo.dataAccess.abstracts.LanguageTechnologyRepository;
+import kodlamaio.devs.demo.entities.LanguageTechnology;
+
+public class LanguageTechnologyManager implements LanguageTechnologyService{
+
+	LanguageTechnologyRepository techRepository;
+	
+	@Override
+	public void addTechnology(LanguageTechnology languageTechnology) {
+		techRepository.save(languageTechnology);
+		
+	}
+
+	@Override
+	public void deleteTechnology(LanguageTechnology languageTechnology) {
+		techRepository.delete(languageTechnology);
+		
+	}
+
+	@Override
+	public void updateTechnology(LanguageTechnology languageTechnology,int id) {
+		LanguageTechnology referenceItem = techRepository.getReferenceById(id);
+		referenceItem = languageTechnology;
+		techRepository.save(referenceItem);
+		
+	}
+
+	@Override
+	public List<LanguageTechnology> listTechnology() {
+		return techRepository.findAll();
+	}
+
+}

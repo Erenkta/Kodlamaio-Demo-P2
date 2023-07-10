@@ -1,0 +1,43 @@
+package kodlamaio.devs.demo.business.concretes;
+
+import java.util.List;
+
+import kodlamaio.devs.demo.business.abstracts.LanguageTechnologyService;
+import kodlamaio.devs.demo.business.requests.languageTechnologyRequests.AddTechnologyRequest;
+import kodlamaio.devs.demo.business.requests.languageTechnologyRequests.DeleteTechnologyRequest;
+import kodlamaio.devs.demo.business.requests.languageTechnologyRequests.UpdateTechnologyRequest;
+import kodlamaio.devs.demo.business.responses.languageTechnologyResponses.GetAllTechnology;
+import kodlamaio.devs.demo.dataAccess.abstracts.LanguageTechnologyRepository;
+import kodlamaio.devs.demo.entities.LanguageTechnology;
+
+public class LanguageTechnologyManager implements LanguageTechnologyService{
+
+	LanguageTechnologyRepository techRepository;
+
+	@Override
+	public void addTechnology(AddTechnologyRequest addTechnologyRequest) {
+		LanguageTechnology languageTechnology = new LanguageTechnology();
+		techRepository.save();
+		
+	}
+
+	@Override
+	public void deleteTechnology(DeleteTechnologyRequest deleteTechnologyRequest) {
+		
+		
+	}
+
+	@Override
+	public void updateTechnology(UpdateTechnologyRequest updateTechnologyRequest, int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<GetAllTechnology> listTechnology() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+}

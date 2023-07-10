@@ -1,0 +1,10 @@
+package kodlamaio.devs.demo.webApi;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/api/language") // bu iki madde api oluşturmak içindi
+public class ProgrammingLanguageController {
+
+}

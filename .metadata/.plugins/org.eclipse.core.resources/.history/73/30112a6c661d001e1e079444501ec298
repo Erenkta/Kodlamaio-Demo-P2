@@ -1,0 +1,11 @@
+package kodlamaio.devs.demo.business.responses.languageTechnologyResponses;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+public class getAllLanguageResponse {
+	private int id;
+	private String name;
+}

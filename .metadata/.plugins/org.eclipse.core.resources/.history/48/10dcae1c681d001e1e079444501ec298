@@ -1,0 +1,6 @@
+package kodlamaio.devs.demo.business.requests.languageTechnologyRequests;
+
+
+public class UpdateTechnologyRequest {
+	private int id;
+}

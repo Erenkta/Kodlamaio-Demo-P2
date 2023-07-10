@@ -1,0 +1,12 @@
+package kodlamaio.devs.demo.business.abstracts;
+
+import java.util.List;
+
+import kodlamaio.devs.demo.entities.ProgrammingLanguage;
+
+public interface ProgrammingLanguageService {
+	public void addLanguage(AddLanguageRequest addLanguageRequest);
+	public void deleteLanguage(ProgrammingLanguage programmingLanguage);
+	public void updateLanguage(ProgrammingLanguage programmingLanguage,int id);
+	public List<ProgrammingLanguage> listLanguage();
+}

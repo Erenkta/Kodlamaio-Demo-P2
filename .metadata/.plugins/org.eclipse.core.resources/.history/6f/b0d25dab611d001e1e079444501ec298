@@ -1,0 +1,5 @@
+package kodlamaio.devs.demo.business.abstracts;
+
+public interface LanguageTechnologyService {
+
+}

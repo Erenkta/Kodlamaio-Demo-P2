@@ -1,0 +1,6 @@
+package kodlamaio.devs.demo.business.requests.languageTechnologyRequests;
+
+public class AddTechnologyRequest {
+	private String name;
+	private int languageId;
+}

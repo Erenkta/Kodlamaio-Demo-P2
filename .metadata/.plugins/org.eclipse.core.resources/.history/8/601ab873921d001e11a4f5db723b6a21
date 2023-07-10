@@ -1,0 +1,16 @@
+package kodlamaio.devs.demo.webApi;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import kodlamaio.devs.demo.business.abstracts.LanguageTechnologyService;
+
+@RestController
+@RequestMapping("/api/technology")
+public class LanguageTechnologyController {
+	private LanguageTechnologyService techService;
+	
+	public LanguageTechnologyController(LanguageTechnologyService techService) {
+		this.techService = techService;
+	}
+}

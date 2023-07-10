@@ -1,0 +1,44 @@
+package kodlamaio.devs.demo.business.concretes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import kodlamaio.devs.demo.business.abstracts.ProgrammingLanguageService;
+import kodlamaio.devs.demo.business.requests.programmingLanguageRequests.AddLanguageRequest;
+import kodlamaio.devs.demo.dataAccess.abstracts.ProgrammingLanguageRepository;
+import kodlamaio.devs.demo.entities.ProgrammingLanguage;
+
+public class ProgrammingLanguageManager implements ProgrammingLanguageService {
+	
+	ProgrammingLanguageRepository langRepository;
+	List<ProgrammingLanguage> languages = new ArrayList<ProgrammingLanguage>();
+
+	@Override
+	public void addLanguage(AddLanguageRequest addLanguageRequest) {
+		languages = langRepository.findAll();
+		ProgrammingLanguage language = new ProgrammingLanguage;
+		
+		
+	}
+
+	@Override
+	public void deleteLanguage(ProgrammingLanguage programmingLanguage) {
+		langRepository.delete(programmingLanguage);
+		
+	}
+
+	@Override
+	public void updateLanguage(ProgrammingLanguage programmingLanguage,int id) {
+		ProgrammingLanguage referenceItem = langRepository.getReferenceById(id);
+		referenceItem = programmingLanguage;
+		langRepository.save(referenceItem);
+		
+	}
+
+	@Override
+	public List<ProgrammingLanguage> listLanguage() {
+		// TODO Auto-generated method stub
+		return langRepository.findAll();
+	}
+
+}

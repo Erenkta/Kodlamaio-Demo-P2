@@ -1,0 +1,36 @@
+package kodlamaio.devs.demo.business.concretes;
+
+import java.util.List;
+
+import kodlamaio.devs.demo.business.abstracts.LanguageTechnologyService;
+import kodlamaio.devs.demo.entities.LanguageTechnology;
+
+public class LanguageTechnologyManager implements LanguageTechnologyService{
+
+	LanguageTechnologyService techService;
+	
+	@Override
+	public void addTechnology(LanguageTechnology languageTechnology) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteTechnology(LanguageTechnology languageTechnology) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateTechnology(LanguageTechnology languageTechnology) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<LanguageTechnology> listTechnology() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

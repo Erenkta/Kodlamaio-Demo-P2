@@ -1,0 +1,7 @@
+package kodlamaio.devs.demo.business.responses.languageTechnologyResponses;
+
+public class GetAllTechnology {
+	private int id;
+	private String name;
+	private int languageId;
+}

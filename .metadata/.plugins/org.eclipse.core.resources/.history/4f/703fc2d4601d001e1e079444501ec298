@@ -1,0 +1,5 @@
+package kodlamaio.devs.demo.dataAccess.abstracts;
+
+public interface LanguageTechnologyRepository {
+
+}
